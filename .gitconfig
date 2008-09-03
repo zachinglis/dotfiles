@@ -1,0 +1,21 @@
+[user]
+  name = Zach Inglis
+  email = zach@lt3media.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = /Users/zachinglis/.cvsignore
+  editor = mate -w  
+[alias]
+  co = checkout
+  ci = commit
+  logg = log --pretty=oneline
+	sh = !git-sh
+[apply]
+  whitespace = warn
+[gui]
+  fontdiff = -family Monaco -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+[diff "ruby"]
+	funcname = ^ *\\(\\(class\\|module\\|def\\) .*\\)

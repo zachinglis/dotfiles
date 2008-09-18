@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 IRB.conf[:AUTO_INDENT] = true
 IRB.conf[:USE_READLINE] = true
-IRB.conf[:LOAD_MODULES] = []  unless IRB.conf.key?(:LOAD_MODULES)
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
@@ -34,5 +33,9 @@ class Object
       method = [klass, method].compact.join('#')
     end
     puts `ri '#{method}'`
+  end
+  
+  def non_class_methods
+    self.methods - Class.methods
   end
 end

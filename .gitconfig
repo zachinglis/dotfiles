@@ -12,6 +12,7 @@
   co = checkout
   ci = commit
   logg = log --pretty=oneline
+  loga = log --pretty=format:'%Cblue %h %Cgreen %an %Cred %s'
 	sh = !git-sh
 [apply]
   whitespace = warn

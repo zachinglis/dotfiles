@@ -42,3 +42,9 @@ alias ls="ls -lA"
 
 # bash
 alias reload='. ~/.bash_profile'
+
+# rvm
+if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
+rvm use ruby --version 1.8.7 # Start off using the rvm of 1.87
+
+source /Users/zachinglis/.profile

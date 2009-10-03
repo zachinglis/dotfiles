@@ -38,7 +38,7 @@ alias ssp="hack && test && ship"
 source ~/.bash_vcs
 
 # overwrite ls
-alias ls="ls -la"
+alias ls="ls -lA"
 
 # bash
 alias reload='. ~/.bash_profile'
